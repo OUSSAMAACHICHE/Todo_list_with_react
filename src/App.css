@@ -1,38 +1,86 @@
-.App {
+.todo-parent {
+  background-color: #444484;
+  margin: 10px auto;
+  width: 60%;
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-input {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-btn {
+  padding: 10px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasks-parent {
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+}
+.task {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid #ffe;
+  justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
+}
+.task-text {
+  word-wrap: break-word;
+  width: calc(100% - 120px);
+}
+.btns-task {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: end;
+  width: 100px;
+}
+.btns-task button {
+  width: 50px;
+  height: 40px;
+}
+.del-btn {
+  background-color: #f84;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.done-btn {
+  background-color: #3f4;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.del-btn:hover {
+  background-color: rgb(247, 113, 36);
+}
+.no-tasks {
+  color: #f49;
+}
+.del-all {
+  background-color: #f49;
+  border: none;
+  width: 6.5rem;
+  height: 30px;
+  border-radius: 1.4rem;
+  cursor: pointer;
   color: white;
+  text-transform: uppercase;
 }
-
-.App-link {
-  color: #61dafb;
+.del-all:hover {
+  opacity: 0.8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done {
+  background-color: #494;
 }
